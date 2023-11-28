@@ -13,5 +13,34 @@ public class Main {
         for (int value : myLinkedList) {
             System.out.println(value);
         }
+
+//        System.out.println(myLinkedList.size());
+        System.out.println("---------------");
+
+        MyStack<Integer> myStack = new MyStack<>();
+
+        myStack.push(1);
+        myStack.push(2);
+
+        System.out.println(myStack.peek());
+        System.out.println(myStack.pop());
+        System.out.println(myStack.pop());
+
+//        System.out.println(myStack.pop());
+
+        System.out.println("---------------");
+
+        MyQueue<Integer> myQueue = new MyQueue<>();
+
+        myQueue.add(1);
+        myQueue.add(2);
+
+        System.out.println(myQueue.peek());
+        System.out.println(myQueue.poll());
+        System.out.println(myQueue.poll());
+
+//        System.out.println(myQueue.poll());
     }
 }
+
+//##Main#######################################

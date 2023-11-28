@@ -64,6 +64,22 @@ public class MyLinkedList<T> implements Iterable<T>{
         previous.next = current.next;
     }
 
+    public int size() {
+        if (head == null) {
+            return 0;
+        }
+
+        int count = 1;
+
+        Node<T> current = head;
+        while (current.next != null) {
+            count++;
+            current = current.next;
+        }
+
+        return count;
+    }
+
     private class MyLinkedListIterator implements Iterator<T> {
         private Node<T> current = head;
 
